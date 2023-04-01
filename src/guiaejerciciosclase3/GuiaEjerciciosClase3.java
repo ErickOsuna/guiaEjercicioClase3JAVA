@@ -176,38 +176,32 @@ public class GuiaEjerciciosClase3 {
         
         Para este ejercicio puede usar todos los métodos de String, tanto de instancia (por ejemplo length) como de clase, por ejemplo String.valueOf(arr) # donde arr es un char[]. Tenga a mano los javadocs del mismo.      
          */
- /* 
+
         String abecedario = "abcdefghijklmnopqrstuvwxyz";
         String frase = "hola que tal";
         int indiceDesplazamiento = 1;
-        char guardado = ' ';
 
         String fraseSinEspacios = frase.replace(" ", "");
 
         char abecedarioCharArray[] = abecedario.toCharArray();
         char fraseSinEspaciosCharArray[] = fraseSinEspacios.toCharArray();
-
+        
         for (int h = 0; h < abecedarioCharArray.length; h++) {
             if (abecedarioCharArray[h] == indiceDesplazamiento) {
                 System.out.println(abecedarioCharArray[h]);
-                guardado = abecedarioCharArray[h];
             }
         }
-        
-        //System.out.println(guardado);
-
+        System.out.println("Respuesta del Ejercicio 2A:");
         for (int indice = 0; indice < fraseSinEspaciosCharArray.length; indice++) {
             for (int i = 0; i < abecedarioCharArray.length; i++) {
-
                 if (fraseSinEspaciosCharArray[indice] == abecedarioCharArray[i]) {
-                    System.out.println(abecedarioCharArray[i]);
+                    System.out.print(abecedarioCharArray[i+indiceDesplazamiento]);
                 }
             }
         }
-
-        // String fraseDesplazada = new String(fraseSinEspaciosCharArray);
-        System.out.println("Respuesta del Ejercicio 2A:");
-         */
+        System.out.println();
+        
+ /*
         char[] letras = {'a', 'b', 'c', 'd', 'z'};
 
         // Incrementar todas las letras en 1
@@ -219,6 +213,7 @@ public class GuiaEjerciciosClase3 {
         for (int i = 0; i < letras.length; i++) {
             System.out.print(Character.toUpperCase(letras[i]) + " ");
         }
+*/
 
     }
 }
