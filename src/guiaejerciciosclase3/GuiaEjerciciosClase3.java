@@ -176,13 +176,12 @@ public class GuiaEjerciciosClase3 {
         
         Para este ejercicio puede usar todos los métodos de String, tanto de instancia (por ejemplo length) como de clase, por ejemplo String.valueOf(arr) # donde arr es un char[]. Tenga a mano los javadocs del mismo.      
          */
-        String abecedario = "abcdefghijklmnopqrstuvwxyz";
+        String abecedario = " abcdefghijklmnopqrstuvwxyz";
         String frase = "hola que tal";
         int indiceDesplazamiento = 1;
 
         char abecedarioCharArray[] = abecedario.toCharArray();
         char fraseCharArray[] = frase.toCharArray();
-        char vacio = ' ';
 
         for (int h = 0; h < abecedarioCharArray.length; h++) {
             if (abecedarioCharArray[h] == indiceDesplazamiento) {
